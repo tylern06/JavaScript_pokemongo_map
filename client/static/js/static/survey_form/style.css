@@ -1,0 +1,43 @@
+h1{
+  color: blue;
+}
+
+p{
+  margin: 0px;
+}
+
+table, tr, td{
+  border: 1px solid silver;
+}
+
+table{
+  border-collapse: collapse;
+}
+
+td{
+  padding: 5px;
+}
+
+.form{
+  width: 50%;
+  margin: 0px auto;
+}
+
+table, .info{
+  width: 350px;
+  margin: 0px auto;
+}
+
+textarea{
+  width: 98%;
+  height: 100px;
+}
+
+span{
+  color: red;
+}
+
+.info{
+  background-color: lightgreen;
+  margin-bottom: 10px;
+}

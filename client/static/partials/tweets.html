@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Display Tweets</title>
+    <style>
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      #display_map {
+        height: 700px;
+        width: 100%;
+        border: 1px solid silver;
+      }
+      #floating-panel {
+        position: absolute;
+        top: 15px;
+        right: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <table class='table'>
+      <thead class="thead-default">
+      	<tr>
+      		<th>User Name</th>
+      		<th>Tweet</th>
+      		<th>Place</th>
+      		<th>lang, long</th>
+      		<th>Tweeted</th>
+          <th>Time Diff</th>
+      	</tr>
+      </thead>
+    	<tr ng-repeat='tweet in tweets' ng-if='tweet.place != null'>
+    		<td ng-bind='tweet.user.name' class='col-md-2'></td>
+    		<td ng-bind='tweet.text' class='col-md-3'></td>
+    		<td ng-bind='tweet.place.name' class='col-md-2'></td>
+        <td class='col-md-3'>Latitude: {{ tweet.place.bounding_box.coordinates[0][0][1] }}<br> Longitude: {{ tweet.place.bounding_box.coordinates[0][0][0] }}</td>
+        <td class='col-md-1'>{{ tweet.created_at | amDateFormat:'dddd, MMMM Do YYYY, h:mm:ss a'}}</td>
+        <td class='col-md-1'><span am-time-ago='tweet.created_at'></span> ago<td>
+    	</tr>
+    </table>
+    <div class='col-md-12'>
+      <div id='display_map'>
+      </div>
+      <div id='floating-panel'>
+        <input type='text' id="pac-input" placeholder='Address, City, Zipcode'>
+        <input type='submit' value='Search'>
+      </div>
+    </div>
+  </body>
+</html>

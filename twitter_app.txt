@@ -1,0 +1,13 @@
+website: www.pokemap.com
+Consumer Key (API Key): JKICZQnoCEKcWO0k4KcGM8EtT
+consumer secret: p4pxv6Bk8KckRICpuemGHswYyFup4ndwJQIGfQRJQ7TLhxecVK
+Access Token: 146255719-PoQ1ICshZXHQzT2dc7Y69WieLoxpVIigVQIegysf
+Access Token Secret: cZwujLFkUCb6syKTzAaoCPwdOLBwOFUKgc6BvnzT6cDQw
+
+----------------------------
+
+for PokemonGo-mapper
+Consumer Key (API Key): hQQqjt025EK0zMAsLcBdjQ7rU
+Consumer Secret (API Secret): MGhjYvHWUlWktGNypAmXMObde0Sa147zR35BrCkdAbznUj5Kid
+Access Token: 754053018337681408-wGledefiCVqda3XeMe0he73VtHy0L4c
+Access Token Secret: iwoCtMvpCxLTcuieUNHMm2nVfDSKGOeiNZdheztOYhqYh
